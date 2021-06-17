@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:enabled="true"
+        android:icon="@drawable/icon_home_black_24"
+        android:title="홈"
+        />
+
+    <item
+        android:id="@+id/bottom_nav_reserve"
+        android:enabled="true"
+        android:icon="@drawable/icon_edit_calendar_black_24"
+        android:title="예약"
+        />
+
+    <item
+        android:id="@+id/bottom_nav_calendar"
+        android:enabled="true"
+        android:icon="@drawable/icon_star_rate_black_24"
+        android:title="일정"
+        />
+
+</menu>

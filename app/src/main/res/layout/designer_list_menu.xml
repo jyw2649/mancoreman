@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:id="@+id/txt_designer_menu_name"
+            android:text="컷트"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:fontFamily="@font/rixyeoljeongdo_regular"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:id="@+id/txt_designer_menu_price"
+            android:text="22,000원"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="13dp"
+            android:gravity="right"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_designer_menu_description"
+        android:text="만족도가 매우 높습니다."
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

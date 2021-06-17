@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reservation_main_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FrgHome_homeBackground"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="예약하기"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:fontFamily="@font/rixyeoljeongdo_regular"
+                android:gravity="center_vertical"
+                android:transitionName="transition_designer"
+                />
+
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <!-- 사진 리뷰-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴 정보"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/rixyeoljeongdo_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/img_reservation_menu"
+                            android:src="@drawable/image_menu_01"
+                            android:scaleType="centerCrop"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="헤드스파컷"
+                                android:textSize="15dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/rixyeoljeongdo_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="33,000원"
+                                android:textSize="15dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/rixyeoljeongdo_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="대표 메뉴\n대표 메뉴"
+                                android:textSize="12dp"
+                                android:textColor="@color/gray"
+                                android:fontFamily="@font/rixyeoljeongdo_regular"
+                                android:layout_marginTop="10dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!-- 날짜-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="날짜"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/rixyeoljeongdo_regular"
+                        />
+
+                    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/calender_reservation"
+                        android:layout_marginTop="10dp"
+                        app:mcv_selectionColor="@color/teal_200"
+                        app:mcv_arrowColor="@color/black"
+                        app:mcv_calendarMode="week"
+                        app:mcv_showOtherDates="other_months"
+                        android:theme="@style/CalenderViewCustom"
+                        />
+
+                </LinearLayout>
+
+
+                <!-- 고객 리뷰-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rixyeoljeongdo_regular"
+                        android:text="시간"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/chip_group_reservation"
+                            app:singleSelection="true"
+                            app:singleLine="true"
+                            />
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

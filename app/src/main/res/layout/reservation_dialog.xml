@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/FrgHome_homeBackground"
+    android:padding="10dp"
+    >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_reservation_menu"
+                android:text="헤드스파컷"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rixyeoljeongdo_regular"
+                />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/txt_reservation_date"
+                 android:text="2021년 11월 30일"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"
+                 android:fontFamily="@font/rixyeoljeongdo_regular"
+                 android:layout_marginTop="10dp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_reservation_time"
+                android:text="10시 30분"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rixyeoljeongdo_regular"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:text="예약 확정하기"
+            android:fontFamily="@font/rixyeoljeongdo_regular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red_700"
+            app:cornerRadius="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+</RelativeLayout>

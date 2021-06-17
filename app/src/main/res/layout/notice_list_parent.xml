@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_notice_title"
+        android:text="[공지]2021년 5월 31일(월) 휴무입니다."
+        android:textColor="@color/black"
+        android:fontFamily="@font/rixyeoljeongdo_regular"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_notice_rgdt"
+        android:text="2021년 5월 18일"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_expand_more_black_24"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+</RelativeLayout>

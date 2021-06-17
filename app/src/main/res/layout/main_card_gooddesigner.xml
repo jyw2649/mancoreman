@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:id="@+id/gd_image"
+            android:src="@drawable/good_designer_01"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gd_title"
+            android:text="김선우"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/gd_image"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/rixyeoljeongdo_regular"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gd_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@+id/gd_title"
+            android:layout_toRightOf="@+id/gd_image"
+            android:layout_marginLeft="10dp"
+            android:rating="4"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gd_desc"
+            android:text="취향 저격 헤어 디자이너 10년"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/gd_image"
+            android:layout_below="@id/gd_rating"
+            android:padding="10dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
