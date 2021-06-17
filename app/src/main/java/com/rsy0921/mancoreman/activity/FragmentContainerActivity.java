@@ -40,6 +40,8 @@ public class FragmentContainerActivity extends AppCompatActivity {
     private GradientDrawable gradient1, gradient2, gradient3, gradient4;
 
 
+    //test
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
